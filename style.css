@@ -266,7 +266,7 @@
   }
 
   /* CONTACT */
-  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+  .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 900px; margin: 0 auto;}
   .contact-item {
     background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
     padding: 1.5rem; display: flex; align-items: center; gap: 1rem;

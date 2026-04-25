@@ -378,6 +378,8 @@
     .nav-logo {font-size: 1rem;}
     .hero-title{font-size: 2.2rem;}
     .contact-grid { grid-template-columns: 1fr; }
+    .carousel-container {height:auto; max-height: 80vh;}
+    .carousel-slide {height: auto; overflow-y: visible;}
   }
 
   ::-webkit-scrollbar { width: 6px; height: 6px; }

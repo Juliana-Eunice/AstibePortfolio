@@ -240,8 +240,8 @@
   .prompt-line { color: var(--accent2); }
 
   /* GRID */
-  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
-  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1.25rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1.25rem; }
 
   /* REFLECTION */
   .reflection {
@@ -302,10 +302,63 @@
 
   /* MOBILE */
   @media (max-width: 700px) {
+    /* Nav */
+    nav { padding: 0 1rem; }
     .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: rgba(13,13,20,0.97); flex-direction: column; padding: 1rem; gap: 0.25rem; }
     .nav-links.open { display: flex; }
     .hamburger { display: flex; }
+
+    /* Hero */
+    #home { padding: 5rem 1rem 3rem; }
+    .hero-title { font-size: clamp(2rem, 10vw, 3rem); }
+    .hero-sub { font-size: 0.83rem; }
+    .hero-cta { flex-direction: column; align-items: center; gap: 0.75rem; }
+    .btn { width: 100%; max-width: 260px; text-align: center; }
+
+    /* Sections */
+    .section-wrap { padding: 3rem 0; }
+    .container { padding: 0 1rem; }
+    .section-title { font-size: clamp(1.6rem, 7vw, 2rem); }
+    .section-desc { margin-bottom: 2rem; }
+
+    /* Grids — collapse to single column */
+    .grid-2,
+    .grid-3 { grid-template-columns: 1fr; }
+
+    /* Contact */
     .contact-grid { grid-template-columns: 1fr; }
+    .contact-value { font-size: 0.8rem; word-break: break-all; }
+
+    /* Score display */
+    .score-display { flex-direction: row; align-items: center; gap: 1rem; padding: 1rem; }
+
+    /* Paper card */
+    .paper-card { flex-direction: row; align-items: flex-start; gap: 0.75rem; }
+
+    /* Code blocks — allow horizontal scroll without bleeding */
+    .code-block { max-width: 100%; overflow: hidden; }
+    .code-body { font-size: 0.75rem; overflow-x: auto; white-space: pre; }
+    .screenshot-content { font-size: 0.75rem; }
+
+    /* Accordion */
+    .acc-item.open .acc-body { max-height: 2000px; }
+    .acc-body { padding: 0 0.9rem; }
+    .acc-item.open .acc-body { padding: 0 0.9rem 0.9rem; }
+    .acc-header { padding: 0.9rem 1rem; }
+
+    /* Sub-section */
+    .sub-section { margin-bottom: 2.5rem; }
+    .sub-section-title { font-size: 1.1rem; }
+
+    /* Reflection */
+    .reflection { padding: 1.5rem 1.25rem; }
+    .reflection p { font-size: 0.88rem; }
+
+    /* Cards */
+    .card { padding: 1.25rem; }
+
+    /* Embed PDFs */
+    embed { height: 320px !important; }
   }
 
   ::-webkit-scrollbar { width: 6px; height: 6px; }

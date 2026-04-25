@@ -148,7 +148,16 @@
         
         <div class="grid-2">
           
-          <embed src="SW2.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+          <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(this, 1)">&#10095;</button>
+            <div class="carousel-slide">
+              <img src="sw2_1.jpg" class="active" alt="Page 1">
+              <img src="sw2_2.jpg" alt="Page 2">
+              <img src="sw2_3.jpg" alt="Page 3">
+              <img src="sw2_4.jpg" alt="Page 4">
+            </div>
+          </div>
 
           <div class="card" style="margin-top:0;">
             <div class="card-tag">Learnings</div>
@@ -175,7 +184,14 @@
         
         <div class="grid-2">
           
-          <embed src="SW3.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+          <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(this, 1)">&#10095;</button>
+            <div class="carousel-slide">
+              <img src="sw3_1.jpg" class="active" alt="Page 1">
+              <img src="sw3_2.jpg" alt="Page 2">
+            </div>
+          </div>
 
           <div class="card" style="margin-top:0;">
             <div class="card-tag">Learnings</div>
@@ -209,7 +225,14 @@
         
         <div class="grid-2">
           
-          <embed src="Act1.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+          <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(this, 1)">&#10095;</button>
+            <div class="carousel-slide">
+              <img src="act1_1.jpg" class="active" alt="Page 1">
+              <img src="act1_2.jpg" alt="Page 2">
+            </div>
+          </div>
 
           <div class="card" style="margin-top:0;">
             <div class="card-tag">Learnings</div>
@@ -881,6 +904,16 @@ Input your expenses:
 </footer>
 
 <script>
+  function moveSlide(button, direction) {
+    const container = button.closest('.carousel-container');
+    const slides = container.querySelectorAll('.carousel-slide img');
+    let currentIndex = Array.from(slides).findIndex(img => img.classList.contains('active'));
+    
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + direction + slides.length) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }
+
   function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('open');
   }

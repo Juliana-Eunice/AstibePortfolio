@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Astibe's E-Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">✦ Astibe's E-Portfolio</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#midterm">Midterm</a>
+    <a href="#final">Final</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div>
+    <div class="hero-eyebrow">COMP 009 | OBJECT ORIENTED PROGRAMMING</div>
+    <h1 class="hero-title">Juliana Eunice A.<br>Astibe's Portfolio</h1>
+    <p class="hero-sub">This e-portfolio presents my Midterm Project in Object-Oriented Programming using HTML and CSS. It includes my quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
+    <div class="hero-cta">
+      <a href="#midterm" class="btn btn-primary">View Midterm</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- MIDTERM -->
+<section id="midterm">
+
+  <!-- SECONDARY NAV -->
+  <div id="subNav" class="sub-nav">
+    <div class="sub-nav-inner">
+      <a href="#mt-quizzes" class="sub-nav-link active">Quizzes</a>
+      <a href="#mt-seatwork" class="sub-nav-link">Seatwork</a>
+      <a href="#mt-activities" class="sub-nav-link">Activities</a>
+      <a href="#mt-exam" class="sub-nav-link">Exam</a>
+    </div>
+  </div>
+
+  <!-- ── QUIZZES ── -->
+  <div id="mt-quizzes" class="section-wrap" style="background: linear-gradient(180deg, transparent, rgba(108,99,255,0.04) 50%, transparent);">
+    <div class="container">
+      <div class="section-label">01 — Midterm</div>
+      <h2 class="section-title">Quizzes</h2>
+      <p class="section-desc">My scores and personal thoughts on each quiz throughout the midterm period.</p>
+
+      <div class="accordion" id="quizAccordion">
+
+        <!-- QUIZ 1 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-q">Midterm Quiz #1</span>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <div class="score-display">
+              <div class="score-circle">
+                <div class="score-num">23</div>
+                <div class="score-denom">/ 30</div>
+              </div>
+              <div class="score-info">
+                <h4>Quiz 1 Score</h4>
+                <p>23 out of 30 — 76.7%</p>
+              </div>
+            </div>
+            <div class="acc-thoughts">
+              <strong>💭 My Thoughts</strong>
+              Despite being informed beforehand of a quiz, I still didn't review enough, making me miss a lot of questions and just guess. Even without knowing my score, I knew that I didn't do as well as I could have and it was a lesson to study this course more intensely.
+            </div>
+          </div>
+        </div>
+
+        <!-- QUIZ 2 -->
+        <div class="acc-item">
+          <div class="acc-header" onclick="toggleAcc(this)">
+            <span class="acc-q">Midterm Quiz #2</span>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <div class="score-display">
+              <div class="score-circle">
+                <div class="score-num">41</div>
+                <div class="score-denom">/ 45</div>
+              </div>
+              <div class="score-info">
+                <h4>Quiz 2 Score</h4>
+                <p>41 out of 45 — 91.1%</p>
+              </div>
+            </div>
+            <div class="acc-thoughts">
+              <strong>💭 My Thoughts</strong>
+              I'm really proud of this quiz because I have retained a lot of knowledge from anaylzing the materials given. I also listened more attentively in class so I'm glad it reflected on this quiz. I'm actually not sure what the correct answers were to the questions I got wrong so I hope we can get the answer key.
+            </div>
+          </div>
+        </div>
+</div>
+    </div>
+  </div>
+
+  <!-- ── SEATWORKS ── -->
+  <div id="mt-seatwork" class="section-wrap">
+    <div class="container">
+      <div class="section-label">02 — Midterm</div>
+      <h2 class="section-title">Seatwork</h2>
+      <p class="section-desc">A total of three written exercises that help supplement our learning after classes.</p>
+
+      <!-- SW1 -->
+      <div class="sub-section">
+        <div class="sub-section-title">Seatwork #1</div>
+        <div class="sub-section-desc">Submitted as a physical paper at school — no digital copy available.</div>
+        <div class="paper-card">
+          <div class="paper-icon">📄</div>
+          <div class="paper-info">
+            <h4>Seatwork #1 — Paper Submission</h4>
+            <p>This seatwork was completed and submitted as a handwritten paper during class. No photo or scan was taken at the time.</p>
+            <span class="paper-badge submitted">✓ Submitted in class</span>
+          </div>
+        </div>
+        <div class="card" style="margin-top:0.875rem;">
+            <div class="card-tag">Learnings</div>
+            <div class="learnings">
+              <span class="learning-badge">Pre-fix</span>
+              <span class="learning-badge">Post-fix</span>
+              <span class="learning-badge">Bitwise Operators</span>
+            </div>
+            <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">
+              While doing this seatwork, I learned how to use the unary operators and how they work per line. I had fun calculating for each variable per line but it was also quite confusing and challenging since one mistake could affect all my other answers. 
+            </p>
+          </div>
+      </div>
+
+      <!-- SW2 -->
+      <div class="sub-section">
+        <div class="sub-section-title">Seatwork #2 — Basic ATM System</div>
+        
+        <div class="grid-2">
+          
+          <embed src="SW2.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+
+          <div class="card" style="margin-top:0;">
+            <div class="card-tag">Learnings</div>
+            <div class="learnings">
+              <span class="learning-badge">While Loop</span>
+              <span class="learning-badge">Switch-Case</span>
+              <span class="learning-badge">If-Else Validation</span>
+            </div>
+            <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">
+              This seatwork helped me a lot with understanding how to use both switch-case and if-else together. Since Java is similar to C, I didn't find anything here too difficult. 
+              It simply takes user-input as "choice" and as long as it's not 4, it will continue to loop thanks to the while loop. The switch case takes the "choice" and performs the action. If-else is just used as validation within the cases.
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+
+      <!-- SW3 -->
+      <div class="sub-section">
+        <div class="sub-section-title">Seatwork #3 — Student Age Analyzer</div>
+        
+        <div class="grid-2">
+          
+          <embed src="SW3.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+
+          <div class="card" style="margin-top:0;">
+            <div class="card-tag">Learnings</div>
+            <div class="learnings">
+              <span class="learning-badge">Scanner (User Input)</span>
+              <span class="learning-badge">User-defined Methods</span>
+              <span class="learning-badge">Control Structures (If-Else)</span>
+            </div>
+            <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">
+              Here, I started learning more about methods, which are similar to functions in C. The logic is easy and simple.
+              My method just takes the user-inputted age from the main method and categorizes it based on the given range. In the main method, it's called and stored in another variable in which it is printed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── ACTIVITIES ── -->
+  <div id="mt-activities" class="section-wrap" style="background: linear-gradient(180deg, transparent, rgba(255,101,132,0.03) 50%, transparent);">
+    <div class="container">
+      <div class="section-label">03 — Midterm</div>
+      <h2 class="section-title">Activities</h2>
+      <p class="section-desc">Five activities — one submitted on paper, four with code and program output.</p>
+
+      <!-- ACTIVITY 1 — PAPER -->
+      <div class="sub-section">
+        <div class="sub-section-title">Activity #1 — Variables</div>
+        <div class="sub-section-desc">Handwritten and compiled into a PDF.</div>
+        
+        <div class="grid-2">
+          
+          <embed src="Act1.pdf" type="application/pdf" width="100%" height="450px" style="border-radius:12px; border:1px solid var(--border);" />
+
+          <div class="card" style="margin-top:0;">
+            <div class="card-tag">Learnings</div>
+            <div class="learnings">
+              <span class="learning-badge">Variable Identification</span>
+              <span class="learning-badge">Variable Storage</span>
+              <span class="learning-badge">Memory Impact</span>
+              <span class="learning-badge">Visualizing Output</span>
+            </div>
+            <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">
+              Write your reflection here! For example: "This seatwork helped me understand how to handle user balance updates in a real-world scenario."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY 2 — CODE -->
+      <div class="sub-section">
+        <div class="sub-section-title">Activity #2 – Operators</div>
+        <div class="sub-section-desc">A two-part activity exploring bitwise, ternary, assignment, and mixed operators in Java. Part I had three guided programs; Part II required a custom program combining at least five operator types.</div>
+
+        <!-- PART I label -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--accent2); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1.25rem; padding:0.3rem 0.85rem; border:1px solid rgba(255,101,132,0.3); border-radius:2rem; display:inline-block;">Part I — Guided Programs</div>
+
+        <!-- Problem 1: Bitwise -->
+        <div style="margin-bottom:2rem;">
+          <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem; color:var(--text);">Problem 1 — Bitwise Operators</div>
+          <p style="color:var(--muted); font-size:0.83rem; margin-bottom:1rem;">Create a Java program using bitwise operators that will produce the output: <code>true, 10, false, 15</code>.</p>
+          <div class="grid-2">
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">BitwiseOperators.java</span></div>
+              <div class="code-body"><span class="kw">package</span> act2operators;
+
+<span class="kw">public class</span> <span class="ty">BitwiseOperators</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="kw">int</span> x = <span class="nm">10</span>;   <span class="cm">// 1010</span>
+        <span class="kw">int</span> y = <span class="nm">5</span>;    <span class="cm">// 0101</span>
+        <span class="kw">int</span> z = <span class="nm">15</span>;   <span class="cm">// 1111</span>
+
+        <span class="kw">boolean</span> result1 = x &gt; y;  <span class="cm">// true</span>
+        <span class="kw">int</span> result2 = x &amp; z;      <span class="cm">// 1010 &amp; 1111 = 1010 = 10</span>
+        <span class="kw">boolean</span> result3 = x == y; <span class="cm">// false</span>
+        <span class="kw">int</span> result4 = x | y;      <span class="cm">// 1010 | 0101 = 1111 = 15</span>
+
+        System.out.println(result1 + <span class="st">", "</span> + result2
+            + <span class="st">", "</span> + result3 + <span class="st">", "</span> + result4);
+    }
+}</div>
+            </div>
+            <div class="screenshot-mock">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — BitwiseOperators</span></div>
+              <div class="screenshot-content"><span class="output-line">true, 10, false, 15</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 2: Ternary -->
+        <div style="margin-bottom:2rem;">
+          <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem; color:var(--text);">Problem 2 — Ternary Operator</div>
+          <p style="color:var(--muted); font-size:0.83rem; margin-bottom:1rem;">Create a Java program using the ternary operator that will produce the output: <code>true, false, 25, 30</code>.</p>
+          <div class="grid-2">
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">TernaryOperators.java</span></div>
+              <div class="code-body"><span class="kw">package</span> act2operators;
+
+<span class="kw">public class</span> <span class="ty">TernaryOperators</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="kw">int</span> a = <span class="nm">25</span>;
+        <span class="kw">int</span> b = <span class="nm">30</span>;
+
+        String result1 = (a &lt; b) ? <span class="st">"true"</span> : <span class="st">"false"</span>;
+        String result2 = (b &lt; a) ? <span class="st">"true"</span> : <span class="st">"false"</span>;
+        <span class="kw">int</span> result3 = (a == <span class="nm">25</span>) ? <span class="nm">25</span> : <span class="nm">0</span>;
+        <span class="kw">int</span> result4 = (b != <span class="nm">0</span>) ? <span class="nm">30</span> : <span class="nm">1</span>;
+
+        System.out.println(result1 + <span class="st">", "</span> + result2
+            + <span class="st">", "</span> + result3 + <span class="st">", "</span> + result4);
+    }
+}</div>
+            </div>
+            <div class="screenshot-mock">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — TernaryOperators</span></div>
+              <div class="screenshot-content"><span class="output-line">true, false, 25, 30</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 3: Assignment -->
+        <div style="margin-bottom:2.5rem;">
+          <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem; color:var(--text);">Problem 3 — Assignment Operators</div>
+          <p style="color:var(--muted); font-size:0.83rem; margin-bottom:1rem;">Create a Java program using assignment operators that will produce: <code>Addition: 120, Subtraction: 70, Multiplication: 144, Division: 16</code>.</p>
+          <div class="grid-2">
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">AssignmentOperators.java</span></div>
+              <div class="code-body"><span class="kw">package</span> act2operators;
+
+<span class="kw">public class</span> <span class="ty">AssignmentOperators</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="kw">int</span> add = <span class="nm">100</span>;
+        <span class="kw">int</span> subtract = <span class="nm">100</span>;
+        <span class="kw">int</span> multiply = <span class="nm">12</span>;
+        <span class="kw">int</span> divide = <span class="nm">64</span>;
+
+        add += <span class="nm">20</span>;
+        subtract -= <span class="nm">30</span>;
+        multiply *= <span class="nm">12</span>;
+        divide /= <span class="nm">4</span>;
+
+        System.out.println(<span class="st">"Addition: "</span> + add
+            + <span class="st">", Subtraction: "</span> + subtract
+            + <span class="st">", Multiplication: "</span> + multiply
+            + <span class="st">", Division: "</span> + divide);
+    }
+}</div>
+            </div>
+            <div class="screenshot-mock">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — AssignmentOperators</span></div>
+              <div class="screenshot-content"><span class="output-line">Addition: 120, Subtraction: 70, Multiplication: 144, Division: 16</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PART II label -->
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--accent3); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1.25rem; padding:0.3rem 0.85rem; border:1px solid rgba(67,233,123,0.3); border-radius:2rem; display:inline-block;">Part II — Custom Program</div>
+
+        <!-- Problem 4: DifferentOperators -->
+        <div style="margin-bottom:1.5rem;">
+          <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem; color:var(--text);">DifferentOperators — Mixed Operator Challenge</div>
+          <p style="color:var(--muted); font-size:0.83rem; margin-bottom:1rem;">A custom program using 5+ operator types with exactly 6 outputs (2 boolean, 4 numeric), including a tricky unary case: <code>num1++ + ++num1</code>.</p>
+          <div class="grid-2">
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">DifferentOperators.java</span></div>
+              <div class="code-body"><span class="kw">package</span> act2operators;
+
+<span class="kw">public class</span> <span class="ty">DifferentOperators</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="kw">int</span> num1 = <span class="nm">8</span>;
+        <span class="kw">int</span> num2 = <span class="nm">4</span>;
+        <span class="kw">boolean</span> check = <span class="kw">true</span>;
+
+        System.out.println((num1 &gt; num2) &amp;&amp; check); <span class="cm">// boolean #1</span>
+        System.out.println(num1 &lt;&lt; <span class="nm">1</span>);             <span class="cm">// numeric #1</span>
+
+        <span class="kw">int</span> unaryCase = num1++ + ++num1;
+        System.out.println(unaryCase);               <span class="cm">// numeric #2</span>
+        System.out.println(unaryCase % num2);        <span class="cm">// numeric #3</span>
+
+        num2 *= <span class="nm">2</span>;
+        System.out.println(num2);                    <span class="cm">// numeric #4</span>
+        System.out.println(num2 == num1);            <span class="cm">// boolean #2</span>
+    }
+}</div>
+            </div>
+            <div class="screenshot-mock">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — DifferentOperators</span></div>
+              <div class="screenshot-content"><span class="output-line">true</span>
+<span class="output-line">16</span>
+<span class="output-line">18</span>
+<span class="output-line">2</span>
+<span class="output-line">8</span>
+<span class="output-line">false</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learnings -->
+        <div class="card" style="margin-top:1rem;">
+          <div class="card-tag">Learnings</div>
+          <div class="learnings">
+            <span class="learning-badge">Bitwise &amp; | operators</span>
+            <span class="learning-badge">Ternary operator</span>
+            <span class="learning-badge">Assignment shortcuts</span>
+            <span class="learning-badge">Left shift &lt;&lt;</span>
+            <span class="learning-badge">Tricky unary (post/pre)</span>
+            <span class="learning-badge">Logical &amp;&amp; with boolean</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">Write your reflection on what you learned from this activity.</p>
+        </div>
+      </div>
+
+      <!-- ACTIVITY 3 — CODE -->
+      <div class="sub-section">
+        <div class="sub-section-title">Activity #3 – Simple Wallet</div>
+        <div class="sub-section-desc">A console-based wallet program with a menu loop for viewing balance, adding money, and spending money — with input validation and a transaction counter.</div>
+
+        <div class="grid-2">
+          <div>
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">SimpleWalletAstibe.java</span></div>
+              <div class="code-body"><span class="kw">package</span> simplewallet;
+<span class="kw">import</span> java.util.Scanner;
+
+<span class="kw">public class</span> <span class="ty">SimpleWalletAstibe</span> { <span class="cm">// class name</span>
+
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) { <span class="cm">// main method</span>
+
+        Scanner input = <span class="kw">new</span> <span class="ty">Scanner</span>(System.in); <span class="cm">// Scanner</span>
+        <span class="kw">double</span> bal = <span class="nm">3000</span>;              <span class="cm">// set balance</span>
+        <span class="kw">double</span> addBal = <span class="nm">0</span>, spendBal = <span class="nm">0</span>;
+        <span class="kw">int</span> choice = <span class="nm">0</span>;
+        <span class="kw">int</span> transCTR = <span class="nm">0</span>;               <span class="cm">// my counter variable</span>
+
+        <span class="kw">while</span> (choice != <span class="nm">4</span>) {           <span class="cm">// while loop</span>
+            <span class="cm">// Menu</span>
+            System.out.println(<span class="st">"\n===== WALLET MENU ====="</span>);
+            System.out.println(<span class="st">"1. View Balance"</span>);
+            System.out.println(<span class="st">"2. Add Money"</span>);
+            System.out.println(<span class="st">"3. Spend Money"</span>);
+            System.out.println(<span class="st">"4. Exit\n"</span>);
+
+            System.out.println(<span class="st">"Transaction "</span> + (transCTR+<span class="nm">1</span>) + <span class="st">":"</span>);
+            System.out.print(<span class="st">"Choice: "</span>);
+            choice = input.nextInt();
+
+            <span class="cm">// switch-case</span>
+            <span class="kw">switch</span>(choice) {
+                <span class="kw">case</span> <span class="nm">1</span>:
+                    System.out.printf(<span class="st">"Output: Balance = %.2f%n"</span>, bal);
+                    transCTR++;
+                    <span class="kw">break</span>;
+                <span class="kw">case</span> <span class="nm">2</span>:
+                    System.out.print(<span class="st">"Add: "</span>);
+                    addBal = input.nextDouble();
+                    bal += addBal;
+                    System.out.printf(<span class="st">"Output: New Balance = %.2f%n"</span>, bal);
+                    transCTR++;
+                    <span class="kw">break</span>;
+                <span class="kw">case</span> <span class="nm">3</span>:
+                    System.out.print(<span class="st">"Spend: "</span>);
+                    spendBal = input.nextDouble();
+                    System.out.print(<span class="st">"Output: "</span>);
+                    <span class="cm">// if-else if statement</span>
+                    <span class="kw">if</span> (spendBal &gt; <span class="nm">1000</span>) {
+                        System.out.println(<span class="st">"Exceeds maximum spend (1,000)."</span>);
+                    } <span class="kw">else if</span> (spendBal &gt; bal) {
+                        System.out.println(<span class="st">"Exceeds balance."</span>);
+                    } <span class="kw">else</span> {
+                        bal -= spendBal;
+                        System.out.printf(<span class="st">"New Balance = %.2f%n"</span>, bal);
+                        transCTR++;
+                    }
+                    <span class="kw">break</span>;
+                <span class="kw">case</span> <span class="nm">4</span>:
+                    System.out.println(<span class="st">"\nTransaction Count: "</span> + transCTR);
+                    <span class="kw">break</span>;
+                <span class="kw">default</span>:
+                    System.out.println(<span class="st">"Invalid choice, choose only 1-4."</span>);
+            }
+        }
+    }
+}</div>
+            </div>
+          </div>
+          <div>
+            <div class="screenshot-mock" style="margin-bottom:1rem;">
+              <div class="screenshot-bar">
+                <div class="code-dots"><span></span><span></span><span></span></div>
+                <span class="address">Console — SimpleWalletAstibe</span>
+              </div>
+              <div class="screenshot-content">
+<span class="output-line">===== WALLET MENU =====</span>
+1. View Balance
+2. Add Money
+3. Spend Money
+4. Exit
+
+Transaction 1:
+<span class="prompt-line">Choice: 1</span>
+<span class="output-line">Output: Balance = 3000.00</span>
+
+<span class="output-line">===== WALLET MENU =====</span>
+Transaction 2:
+<span class="prompt-line">Choice: 2</span>
+<span class="prompt-line">Add: .50</span>
+<span class="output-line">Output: New Balance = 3000.50</span>
+
+<span class="output-line">===== WALLET MENU =====</span>
+Transaction 4:
+<span class="prompt-line">Choice: 3</span>
+<span class="prompt-line">Spend: 1000</span>
+<span class="output-line">Output: New Balance = 1000.50</span>
+
+<span class="output-line">===== WALLET MENU =====</span>
+Transaction 6:
+<span class="prompt-line">Choice: 3</span>
+<span class="prompt-line">Spend: 1000</span>
+<span class="output-line">Output: Exceeds balance.</span>
+
+<span class="output-line">===== WALLET MENU =====</span>
+Transaction 7:
+<span class="prompt-line">Choice: 9</span>
+<span class="output-line">Invalid choice, choose only 1-4.</span>
+
+<span class="output-line">===== WALLET MENU =====</span>
+Transaction 7:
+<span class="prompt-line">Choice: 4</span>
+<span class="output-line">Transaction Count: 6</span></div>
+            </div>
+
+            <!-- Note from PDF -->
+            <div style="margin-bottom:1rem; padding:0.85rem 1rem; background:rgba(255,191,0,0.06); border:1px solid rgba(255,191,0,0.2); border-left:3px solid rgba(255,191,0,0.5); border-radius:0 8px 8px 0; font-size:0.82rem; color:var(--muted);">
+              <strong style="color:#ffd060; display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.3rem;">📝 Note</strong>
+              The menu is inside the loop so it prints after every transaction. Invalid choices and "Exit" don't count as complete transactions so the total is 6.
+            </div>
+
+            <div class="card" style="margin-top:0;">
+              <div class="card-tag">Learnings</div>
+              <div class="learnings">
+                <span class="learning-badge">while loop</span>
+                <span class="learning-badge">switch-case</span>
+                <span class="learning-badge">if-else if</span>
+                <span class="learning-badge">Input validation</span>
+                <span class="learning-badge">Transaction counter</span>
+                <span class="learning-badge">printf formatting</span>
+              </div>
+              <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">Write your reflection on what you learned from this activity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY 4 — CODE -->
+      <div class="sub-section">
+        <div class="sub-section-title">Activity #4 — Grade Evaluation System</div>
+        <div class="sub-section-desc">Computes the average of three grades (prelim, midterm, finals) and uses an if-else chain feeding into a switch statement to print the corresponding remark.</div>
+
+        <div class="grid-2">
+          <div>
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">GradeEvaluationAstibe.java</span></div>
+              <div class="code-body"><span class="kw">package</span> gradeevalsystem;
+
+<span class="kw">public class</span> <span class="ty">GradeEvaluationAstibe</span> {
+
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="kw">double</span> prelim = <span class="nm">85</span>;
+        <span class="kw">double</span> midterm = <span class="nm">78</span>;
+        <span class="kw">double</span> finals = <span class="nm">90</span>;
+        <span class="kw">double</span> average;
+        <span class="kw">int</span> range = <span class="nm">0</span>;
+        average = (prelim + midterm + finals) / <span class="nm">3</span>;
+
+        System.out.printf(<span class="st">"Prelim Grade: %.2f"</span>, prelim);
+        System.out.printf(<span class="st">"\nMidterm Grade: %.2f"</span>, midterm);
+        System.out.printf(<span class="st">"\nFinal Grade: %.2f"</span>, finals);
+        System.out.printf(<span class="st">"\n\nAverage: %.2f\n"</span>, average);
+
+        <span class="kw">if</span> (average >= <span class="nm">90</span>) {
+            range = <span class="nm">1</span>;
+        } <span class="kw">else if</span> (average >= <span class="nm">80</span>) {
+            range = <span class="nm">2</span>;
+        } <span class="kw">else if</span> (average >= <span class="nm">75</span>) {
+            range = <span class="nm">3</span>;
+        } <span class="kw">else</span> {
+            range = <span class="nm">4</span>;
+        }
+
+        <span class="kw">switch</span>(range) {
+            <span class="kw">case</span> <span class="nm">1</span>:
+                System.out.println(<span class="st">"Remark: Excellent"</span>);
+                <span class="kw">break</span>;
+            <span class="kw">case</span> <span class="nm">2</span>:
+                System.out.println(<span class="st">"Remark: Good"</span>);
+                <span class="kw">break</span>;
+            <span class="kw">case</span> <span class="nm">3</span>:
+                System.out.println(<span class="st">"Remark: Fair"</span>);
+                <span class="kw">break</span>;
+            <span class="kw">case</span> <span class="nm">4</span>:
+                System.out.println(<span class="st">"Remark: Failed"</span>);
+                <span class="kw">break</span>;
+            <span class="kw">default</span>:
+        }
+    }
+}</div>
+            </div>
+          </div>
+          <div>
+            <div class="screenshot-mock" style="margin-bottom:1rem;">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console &mdash; GradeEvaluationAstibe</span></div>
+              <div class="screenshot-content"><span class="output-line">Prelim Grade: 85.00</span>
+<span class="output-line">Midterm Grade: 78.00</span>
+<span class="output-line">Final Grade: 90.00</span>
+
+<span class="output-line">Average: 84.33</span>
+<span class="output-line">Remark: Good</span></div>
+            </div>
+            <div class="card" style="margin-top:0;">
+              <div class="card-tag">Learnings</div>
+              <div class="learnings">
+                <span class="learning-badge">if-else chain</span>
+                <span class="learning-badge">switch-case</span>
+                <span class="learning-badge">printf formatting</span>
+                <span class="learning-badge">Average computation</span>
+                <span class="learning-badge">Range mapping</span>
+              </div>
+              <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">Write your reflection on what you learned from this activity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY 5 — CODE -->
+      <div class="sub-section">
+        <div class="sub-section-title">Activity #5 – Personal Expense Tracker</div>
+        <div class="sub-section-desc">A multi-method expense tracker that takes a budget and four expense categories as input, then computes the total, checks against the budget, and displays a personalized savings message if the user spent under half their budget.</div>
+
+        <div class="grid-2">
+          <div>
+            <div class="code-block">
+              <div class="code-header"><div class="code-dots"><span></span><span></span><span></span></div><span class="code-lang">ExpenseTrackerAstibe.java</span></div>
+              <div class="code-body"><span class="kw">package</span> act5;
+<span class="kw">import</span> java.util.Scanner;
+
+<span class="kw">public class</span> <span class="ty">ExpenseTrackerAstibe</span> {
+
+    <span class="cm">// DISPLAY PROGRAM TITLE</span>
+    <span class="kw">public static void</span> <span class="fn">title</span>() {
+        System.out.println(<span class="st">"====================================="</span>);
+        System.out.println(<span class="st">"      EXPENSE TRACKER by ASTIBE"</span>);
+        System.out.println(<span class="st">"====================================="</span>);
+    }
+
+    <span class="cm">// CALCULATE TOTAL EXPENSES</span>
+    <span class="kw">public static float</span> <span class="fn">calculateTotEx</span>(<span class="kw">float</span> a, <span class="kw">float</span> b, <span class="kw">float</span> c, <span class="kw">float</span> d) {
+        <span class="kw">return</span> a + b + c + d;
+    }
+
+    <span class="cm">// CHECK TOTAL EXPENSES</span>
+    <span class="kw">public static</span> String <span class="fn">checkExceed</span>(<span class="kw">float</span> total, <span class="kw">float</span> budget) {
+        String message;
+        <span class="kw">if</span> (total &gt; budget) {
+            message = <span class="st">"&gt;&gt; Budget exceeded! Spend more wisely."</span>;
+        } <span class="kw">else</span> {
+            message = <span class="st">"&gt;&gt; Expenses are within your set budget."</span>;
+        }
+        <span class="kw">return</span> message;
+    }
+
+    <span class="cm">// DISPLAY TOTAL EXPENSES AND BUDGET STATUS</span>
+    <span class="kw">public static void</span> <span class="fn">displayStatus</span>(<span class="kw">float</span> a, <span class="kw">float</span> b, String message) {
+        <span class="kw">float</span> leftOver = b - a;   <span class="cm">// remaining budget</span>
+        System.out.println(<span class="st">"\n======== SUMMARY OF EXPENSES ========"</span>);
+        System.out.printf(<span class="st">"Total expenses: %.2f%n"</span>, a);
+        System.out.printf(<span class="st">"Budget status: You have %.2f left.%n"</span>, leftOver);
+        System.out.println(message);
+    }
+
+    <span class="cm">// PERSONALIZED MESSAGE (spent less than or half of budget)</span>
+    <span class="kw">public static void</span> <span class="fn">displayAccom</span>(<span class="kw">float</span> tot, <span class="kw">float</span> budget) {
+        <span class="kw">if</span> (tot &lt;= budget/<span class="nm">2</span> &amp;&amp; budget != <span class="nm">0</span>) {
+            System.out.println(<span class="st">"\nGood job! You saved a ton, continue living humbly."</span>);
+        }
+    }
+
+    <span class="cm">// MY MAIN METHOD</span>
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        Scanner input = <span class="kw">new</span> <span class="ty">Scanner</span>(System.in); <span class="cm">// for user input</span>
+
+        <span class="fn">title</span>(); <span class="cm">// display title</span>
+
+        System.out.print(<span class="st">"Input your budget: "</span>);
+        <span class="kw">float</span> budget = input.nextFloat();
+
+        System.out.println(<span class="st">"Input your expenses:"</span>);
+        System.out.print(<span class="st">"- Food: "</span>);
+        <span class="kw">float</span> food = input.nextFloat();
+
+        System.out.print(<span class="st">"- Transportation: "</span>);
+        <span class="kw">float</span> transpo = input.nextFloat();
+
+        System.out.print(<span class="st">"- Shopping: "</span>);  <span class="cm">// another expense category</span>
+        <span class="kw">float</span> shopping = input.nextFloat();
+
+        System.out.print(<span class="st">"- Other expenses: "</span>);
+        <span class="kw">float</span> others = input.nextFloat();
+
+        <span class="kw">float</span> totalExp = <span class="fn">calculateTotEx</span>(food, transpo, shopping, others);
+        String mess = <span class="fn">checkExceed</span>(totalExp, budget);
+        <span class="fn">displayStatus</span>(totalExp, budget, mess);
+        <span class="fn">displayAccom</span>(totalExp, budget);
+
+        input.close();
+    }
+}</div>
+            </div>
+          </div>
+          <div>
+            <!-- Output 1: within budget + under half -->
+            <div style="font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--accent3); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;">✓ Within budget &amp; spent under half</div>
+            <div class="screenshot-mock" style="margin-bottom:1rem;">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — ExpenseTrackerAstibe</span></div>
+              <div class="screenshot-content">
+<span class="output-line">=====================================</span>
+<span class="output-line">      EXPENSE TRACKER by ASTIBE</span>
+<span class="output-line">=====================================</span>
+<span class="prompt-line">Input your budget: 2000</span>
+Input your expenses:
+<span class="prompt-line">- Food: 100</span>
+<span class="prompt-line">- Transportation: 200</span>
+<span class="prompt-line">- Shopping: 300</span>
+<span class="prompt-line">- Other expenses: 10.50</span>
+
+<span class="output-line">======== SUMMARY OF EXPENSES ========</span>
+<span class="output-line">Total expenses: 610.50</span>
+<span class="output-line">Budget status: You have 1389.50 left.</span>
+<span class="output-line">&gt;&gt; Expenses are within your set budget.</span>
+
+<span class="output-line">Good job! You saved a ton, continue living humbly.</span></div>
+            </div>
+
+            <!-- Output 2: within budget, no savings message -->
+            <div style="font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--accent); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;">✓ Within budget</div>
+            <div class="screenshot-mock" style="margin-bottom:1rem;">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — ExpenseTrackerAstibe</span></div>
+              <div class="screenshot-content">
+<span class="output-line">=====================================</span>
+<span class="output-line">      EXPENSE TRACKER by ASTIBE</span>
+<span class="output-line">=====================================</span>
+<span class="prompt-line">Input your budget: 1000</span>
+<span class="prompt-line">- Food: 70</span>
+<span class="prompt-line">- Transportation: 100</span>
+<span class="prompt-line">- Shopping: 700</span>
+<span class="prompt-line">- Other expenses: 9.67</span>
+
+<span class="output-line">======== SUMMARY OF EXPENSES ========</span>
+<span class="output-line">Total expenses: 879.67</span>
+<span class="output-line">Budget status: You have 120.33 left.</span>
+<span class="output-line">&gt;&gt; Expenses are within your set budget.</span></div>
+            </div>
+
+            <!-- Output 3: exceeds budget -->
+            <div style="font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--accent2); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;">✗ Exceeds budget</div>
+            <div class="screenshot-mock" style="margin-bottom:1rem;">
+              <div class="screenshot-bar"><div class="code-dots"><span></span><span></span><span></span></div><span class="address">Console — ExpenseTrackerAstibe</span></div>
+              <div class="screenshot-content">
+<span class="output-line">=====================================</span>
+<span class="output-line">      EXPENSE TRACKER by ASTIBE</span>
+<span class="output-line">=====================================</span>
+<span class="prompt-line">Input your budget: 1000</span>
+<span class="prompt-line">- Food: 400</span>
+<span class="prompt-line">- Transportation: 500</span>
+<span class="prompt-line">- Shopping: 1000</span>
+<span class="prompt-line">- Other expenses: 0</span>
+
+<span class="output-line">======== SUMMARY OF EXPENSES ========</span>
+<span class="output-line">Total expenses: 1900.00</span>
+<span class="output-line">Budget status: You have -900.00 left.</span>
+<span class="output-line">&gt;&gt; Budget exceeded! Spend more wisely.</span></div>
+            </div>
+
+            <div class="card" style="margin-top:0;">
+              <div class="card-tag">Learnings</div>
+              <div class="learnings">
+                <span class="learning-badge">Multiple static methods</span>
+                <span class="learning-badge">Return types</span>
+                <span class="learning-badge">float input</span>
+                <span class="learning-badge">Budget logic</span>
+                <span class="learning-badge">Conditional messages</span>
+                <span class="learning-badge">Method calls in main</span>
+              </div>
+              <p style="color:var(--muted); font-size:0.85rem; margin-top:0.85rem;">Write your reflection on what you learned from this activity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── MIDTERM EXAM ── -->
+  <div id="mt-exam" class="section-wrap">
+    <div class="container">
+      <div class="section-label">04 — Midterm</div>
+      <h2 class="section-title">Exam</h2>
+      <p class="section-desc">My personal reflection on the midterm departmental exam experience.</p>
+
+      <!-- Reflection -->
+      <div class="section-label" style="margin-bottom:1rem;">Exam Reflection</div>
+      <div class="reflection">
+        <p>Write your midterm exam reflection here. How did you feel going into it? Which questions were straightforward, and which ones stumped you? What topics would you revisit before the final period? Honest reflections — even on mistakes — show growth and self-awareness.</p>
+        <div class="reflection-meta">— Juliana Eunice A. Astibe, 2026</div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FINAL — COMING SOON -->
+<section id="final">
+  <div class="section-wrap" style="background: linear-gradient(180deg, transparent, rgba(67,233,123,0.04) 50%, transparent);">
+    <div class="container">
+      <div class="section-label">05 — Final</div>
+      <h2 class="section-title">Final Period</h2>
+      <p class="section-desc">The final term hasn't happened yet. Check back once it does! This section will be filled with quizzes, seatwork, activities, and exam reflections.</p>
+
+      <div style="padding:2.5rem; border:1px dashed rgba(108,99,255,0.3); border-radius:16px; text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:1rem;">🚧</div>
+        <div style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:0.5rem;">Under Construction</div>
+        <div style="color:var(--muted); font-size:0.88rem; max-width:380px; margin:0 auto 1.25rem;">This section will be completed once the final period is underway. Come back soon!</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--muted);">
+          <span style="color:var(--accent3);">status</span> = <span style="color:var(--accent2);">"not yet started"</span>;
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-title">Get in Touch!</h2>
+      <p class="section-desc">Feel free to reach out for questions, feedbacks, or concerns.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:julianaeunice81@gmail.com" class="contact-item">
+          <div class="contact-icon purple">✉</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">julianaeunice81@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/juliana-eunice-astibe-292b9232a/" class="contact-item">
+          <div class="contact-icon pink">in</div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/juliana-eunice-astibe</div>
+          </div>
+        </a>
+        <a href="https://github.com/Juliana-Eunice" class="contact-item">
+          <div class="contact-icon green">&#60;/&#62;</div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">github.com/Juliana-Eunice</div>
+          </div>
+        </a>
+        <a href="https://facebook.com/julianaeunice.astibe" class="contact-item">
+          <div class="contact-icon amber"><i class="fa fa-facebook-f"></i></div>
+          <div>
+            <div class="contact-label">Facebook</div>
+            <div class="contact-value">facebook.com/julianaeunice.astibe</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top:3rem; text-align:center;">
+        <div class="section-label" style="margin-bottom:0.75rem;">School Info</div>
+        <div class="card" style="max-width:480px; margin:0 auto; text-align:left;">
+          <ul style="list-style:none; padding:0;">
+            <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--muted); font-size:0.88rem;"><strong style="color:var(--text);">Course:</strong> Object Oriented Programming</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--muted); font-size:0.88rem;"><strong style="color:var(--text);">Year & Section:</strong> BSIT 2-1</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--muted); font-size:0.88rem;"><strong style="color:var(--text);">Instructor:</strong> Prof. Severino Bedis Jr.</li>
+            <li style="padding:0.5rem 0; color:var(--muted); font-size:0.88rem;"><strong style="color:var(--text);">Academic Year:</strong> 2025–2026</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built with ♥ by <span>Jea</span> · OOP E-Portfolio · <span>2026</span></p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  function toggleAcc(header) {
+    const item = header.closest('.acc-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.acc-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const subNav = document.getElementById('subNav');
+  const subLinks = document.querySelectorAll('.sub-nav-link');
+  const midtermSection = document.getElementById('midterm');
+  const finalSection = document.getElementById('final');
+
+  const subSections = ['mt-quizzes','mt-seatwork','mt-activities','mt-exam']
+    .map(id => document.getElementById(id));
+
+  function totalNavHeight() {
+    return 64 + (subNav.classList.contains('visible') ? subNav.offsetHeight : 0);
+  }
+
+  function updateActiveNav() {
+    const threshold = totalNavHeight() + 10;
+
+    // ── Main nav highlight ──
+    let current = '';
+    sections.forEach(s => {
+      const top = s.getBoundingClientRect().top;
+      if (top <= threshold) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+
+    // ── Show/hide secondary nav ──
+    const midTop  = midtermSection.getBoundingClientRect().top;
+    const finTop  = finalSection.getBoundingClientRect().top;
+    const inMidterm = midTop <= 64 && finTop > 64;
+    subNav.classList.toggle('visible', inMidterm);
+
+    // ── Secondary nav highlight ──
+    // Use a small positive threshold so the active link switches
+    // only when the section header has actually crossed the nav bar.
+    let subCurrent = subSections[0] ? subSections[0].id : '';
+    subSections.forEach(s => {
+      if (!s) return;
+      const top = s.getBoundingClientRect().top;
+      if (top <= threshold) subCurrent = s.id;
+    });
+    subLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + subCurrent);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
+
+  // Sub-nav clicks: scroll so the section header sits just below both navbars
+  subLinks.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      const offset = totalNavHeight() + 10;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+
+  navLinks.forEach(a => a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  }));
+</script>
+</body>
+</html>
